@@ -10,6 +10,6 @@ jobs:
       - name: welcome
         run: echo "Welcome to my first action"
 
-      - name: list files
+      - name: list files 
         run: ls -la
         
