@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Welcome
-        run: echo "Welcome to my first action"
+        run: echo "Welcome to my first GitHub Action"
 
       - name: List files
         run: ls -la
