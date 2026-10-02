@@ -9,12 +9,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install cowsay
-        run: sudo apt-get install -y cowsay
+      - name: run shell script
+        run: ./github/workflows/ascii-script.sh
 
-      - name: Generate ASCII art
-        run: cowsay "Hello from GitHub Actions" > dragon.txt
-
-      - name: Show generated ASCII art
-        run: cat dragon.txt
+      - name: show files in the directory
+        run: ls -ltra  
 
