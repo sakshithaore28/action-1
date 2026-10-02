@@ -1,0 +1,20 @@
+name: generate-ascii
+on :
+  push
+
+jobs:
+  generate-ascii:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install cowsay
+        run: sudo apt-get install -y cowsay
+
+      - name: Generate ASCII art
+        run: cowsay "Hello from GitHub Actions" > dragon.txt
+
+      - name: Show generated ASCII art
+        run: cat dragon.txt
+
