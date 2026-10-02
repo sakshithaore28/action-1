@@ -13,9 +13,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+
       - name: Hello
         run: echo "Hello from GitHub Actions"
 
-      - name: Show files
-        run: ls -la
+      - name: Show current directory
+        run: |
+          pwd  
+          ls -la
+
+      - name: generating ascii art
+        run: cowsay -f "Hello from GitHub Actions" >> dragon.txt
