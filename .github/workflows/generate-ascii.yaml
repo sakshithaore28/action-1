@@ -11,8 +11,8 @@ jobs:
 
       - name: run shell script
         run: |
-          chmod +x ./github/workflows/ascii-script.sh
-          ./github/workflows/ascii-script.sh
+          chmod +x .github/workflows/ascii-script.sh
+          .github/workflows/ascii-script.sh
 
       - name: show files in the directory
         run: ls -ltra   
