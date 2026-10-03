@@ -13,5 +13,5 @@ jobs:
         run: ./github/workflows/ascii-script.sh
 
       - name: show files in the directory
-        run: ls -ltra  
+        run: ls -ltra   
 
